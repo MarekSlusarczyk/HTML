@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formularz</title>
+    </head>
+    <body>
+        <form method="get" action="">
+            <fieldset>
+                <legend>Formularz</legend>
+                <p>Podaj imię: <input type="text" placeholder="Imię" name="imie"></p>
+                <p>Podaj nazwisko: <input type="text" placeholder="Nazwisko" name="nazwisko"></p>
+                <p>PESEL: <input maxlength="11" placeholder="PESEL" name="pesel"></p>
+                <p>Kod Pocztowy: <input maxlength="2" placeholder="XX"> - <input maxlength="3" placeholder="YYY"></p>
+                <p>Email: <input type="email" placeholder="email@email.com"></p>
+                <p>Płeć:<br>
+                    <input type="radio" name="plec" value="mezczyzna">Mężczyzna<br>
+                    <input type="radio" name="plec" value="kobieta">Kobieta
+                </p>
+                <p>Wybierz województwo:
+                    <select name="wojewodztwo">
+                        <option value="dolnoslaskie">dolnośląskie</option>
+                        <option value="slaskie">śląskie</option>
+                        <option value="opolskie">opolskie</option>
+                        <option value="malopolskie">małopolskie</option>
+                        <option value="mazowieckie">mazowieckie</option>
+                        <option value="podkarpackie">podkarpackie</option>
+                        <option value="lubelskie">lubelskie</option>
+                        <option value="lubuskie">lubuskie</option>
+                        <option value="swietokrzyskie">świętokrzyskie</option>
+                        <option value="lodzkie">łódzkie</option>
+                        <option value="wielkopolskie">wielkopolskie</option>
+                        <option value="kujawsko_pomorskie">kujawsko-pomorskie</option>
+                        <option value="pomorskie">pomorskie</option>
+                        <option value="warminsko_mazurskie">warmińsko-mazurskie</option>
+                        <option value="podlaskie">podlaskie</option>
+                        <option value="zachodniopomorskie">zachodniopomorskie</option>
+                    </select>
+                </p>
+                <p>Zainteresowania:<br>
+                    <input type="checkbox" name="hobby" value="motoryzacja">Motoryzacja<br>
+                    <input type="checkbox" name="hobby" value="muzyka">Muzyka<br>
+                    <input type="checkbox" name="hobby" value="sport">Sport<br>
+                    <input type="checkbox" name="hobby" value="grykomputerowe">Gry komputerowe<br>
+                    <input type="checkbox" name="hobby" value="literatura">Literatura<br>
+                    <input type="checkbox" name="hobby" value="kino">Kino<br>
+                    <input type="checkbox" name="hobby" value="gotowanie">Gotowanie<br>
+                    <input type="checkbox" name="hobby" value="taniec">Taniec<br>
+                </p>
+
+                <input type="reset" value="Wyczyść">
+                <input type="submit" value="Prześlij">
+            </fieldset>
+        </form>
+    </body>
+</html>
