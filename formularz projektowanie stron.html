@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formularz</title>
+    </head>
+
+    <body>
+        <form method="get" action="">
+            <fieldset>
+                <legend style="text-align:center;">Formularz rejestracyjny</legend>
+                <p>Podaj<br>swoje<input style="margin-left:30px;" type="text" name="nazwisko"><br>nazwisko:</p>
+                
+                 
+                <p>Podaj<br>swoje<input style="margin-left:30px;" type="text" name="imie"><br>imię:</p>
+                
+
+                <p>Wybierz wykształcenie</p>
+                <input name="wyksztalcenie" type="radio" value="podstawowe">Podstawowe<br>
+                <input name="wyksztalcenie" type="radio" value="srednie">Średnie<br>
+                <input name="wyksztalcenie" type="radio" value="wyzsze">Wyższe
+
+
+                
+                <p>Wybierz języki:</p>
+
+
+                <select name="wybor_jezykow" size="6" multiple>
+                    <option value="angielski">Język angielski</option>
+                    <option value="niemiecki">Język niemiecki</option>
+                    <option value="francuski">Język francuski</option>
+                    <option value="wloski">Język włoski</option>
+                    <option value="rosyjski">Język rosyjski</option>
+                    <option value="hiszpanski">Język hiszpański</option>
+                </select>
+
+
+
+                <p>Wybierz zainteresowania:</p>
+
+                
+                <input type="checkbox" name="motoryzacja">Motoryzacja<br>
+                <input type="checkbox" name="sport">Sport<br>
+                <input type="checkbox" name="muzyka">Muzyka<br>
+                <input type="checkbox" name="taniec">Taniec<br>
+                <input type="checkbox" name="grykomp">Gry komputerowe<br>
+                <input type="checkbox" name="inne">Inne (podaj jakie):<input type="text" name="inne_text">
+
+
+                <p>Podaj adres e-mail:</p>
+
+
+
+                <input type="email" name="email">
+
+
+
+                <input type="submit" value="Wyślij">
+                <input type="reset" value="Wyczyść">
+            </fieldset>
+        </form>
+    </body>
+</html>
