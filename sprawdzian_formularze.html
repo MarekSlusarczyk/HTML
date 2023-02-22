@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formularz</title>
+    </head>
+    <body>
+        <form action="" method="get">
+            <p>Nazwa firmy: <input type="text" name="nazwaFirmy"></p>
+            <p>NIP firmy: <input type="number" name="nip"></p>
+            <p>Numer telefonu: <input type="number" name="telefon"></p>
+            <p>Kraj: <input type="text" name="kraj"></p>
+            <p>Adres:<br><textarea name="adres"></textarea></p>
+            <p>Rachunek czy faktura:<br>
+                <input type="radio" name="typ" value="Rachunek"> Rachunek <br>
+                <input type="radio" name="typ" value="Faktura"> Faktura
+            </p>
+            <p>Rodzaj usługi:
+                <select name="rodzajuslugi">
+                    <option value="ksiegowosc">Księgowość</option>
+                    <option value="transport">Transport</option>
+                    <option value="rozrywka">Rozrywka</option>
+                </select>
+            </p>
+            <p>Data zakupu (dzień/miesiąc/rok):
+                <input type="text" name="dzien"> / <input type="text" name="miesiac"> / <input type="text" name="rok">
+            </p>
+            <p>Kwota: <input type="number" name="kwota">
+                <select name="waluta">
+                    <option value="pln">Polski złoty</option>
+                    <option value="eur">Euro</option>
+                    <option value="usd">Dolar amerykański</option>
+                </select>
+            </p>
+            <p>
+                <input type="checkbox" name="przetDanOs" value="tak">Wyrażam zgodę na przetwarzanie danych osobowych<br>
+                <input type="checkbox" name="akceptacjaReg" value="tak">Akceptuję regulamin
+            </p>
+            <fieldset>
+                <legend>Opinia</legend>
+                <textarea name="opinia" cols="40" rows="4"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Zakończ i wybierz akcję</legend>
+                <input type="submit"> <input type="reset">
+            </fieldset>
+        </form>
+    </body>
+</html>
