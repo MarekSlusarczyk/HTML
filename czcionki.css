@@ -1,0 +1,86 @@
+body, p {
+    font-family: 'Open Sans', sans-serif; 
+}
+
+#container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    width: 500px;
+    height: auto;
+}
+
+p {
+    width: 500px;
+    line-height: 2;
+}
+
+#colors {
+    margin: 0;
+    text-align: right;
+    font-size: large;
+    color: white;
+    background-color: black;
+}
+
+p.italic {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-style: italic;
+    text-align: center;
+    color: green;
+    background-color: rgb(53, 38, 9);
+}
+
+p.bold {
+    font-family: 'Roboto';
+    margin: 0;
+    color: #0000ff;
+    background-color: #ffff00;
+    font-style: bold;
+}
+
+p.bold + p {
+    padding: 3rem;
+    text-decoration: underline;
+}
+
+#colors + .italic {
+    font-size: 1.5rem;
+}
+
+.italic + .bold {
+    font-size: 1.5rem;
+}
+
+.bold + p {
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: red;
+}
+
+#colors:hover {
+    cursor: pointer;
+    rotate:calc(30deg);
+}
+
+p.italic:hover {
+    cursor: crosshair;
+    color: white;
+    background-color: green;
+}
+
+p.bold:hover {
+    text-decoration: line-through;
+    color: rgb(0, 183, 255);
+    background-color: lightsalmon;
+}
+
+.bold + p:hover {
+    cursor: pointer;
+    scale: 1.2;
+}
