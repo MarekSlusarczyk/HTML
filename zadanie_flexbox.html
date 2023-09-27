@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            header, footer {
+                width: 100%;
+                height: 80px;
+                background-color: blue;
+            }
+
+            .content {
+                display: flex;
+                width: 100%;
+                height: 600px;
+                background-color: brown;
+            }
+
+            .sidebar {
+                flex-grow: 1;
+                background-color: rgb(63, 39, 17);
+            }
+
+            .middle {
+                flex-basis: 75%;
+            }
+
+            .div_1 {
+                display: flex;
+                height: 130px;
+            }
+
+            .div_1 div {
+                flex-grow: 1;
+                background-color: lightslategray;
+            }
+
+            .div_1 div + div {
+                background-color: burlywood;
+            }
+
+            .div_2 {
+                display: flex;
+                height: 90px;
+            }
+
+            .div_2 div {
+                flex-grow: 1;
+            }
+
+            .violet {
+                background-color: rgb(73, 73, 141);
+            }
+
+            .gray {
+                background-color: rgb(146, 115, 115);
+            }
+
+            .div_3 {
+                display: flex;
+                height: 380px;
+            }  
+
+            .big {
+                flex-basis: 50%;
+                background-color: bisque;
+            }
+
+            .small {
+                flex-basis: 50%;
+            }
+
+            .small div {
+                height: 190px;
+                background-color: rgb(160, 113, 11);
+            }
+
+            .small div + div {
+                background-color: chocolate;
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+        <main class="content">
+            <div class="sidebar"></div>
+            <div class="middle">
+                <div class="div_1">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="div_2">
+                    <div class="violet"></div>
+                    <div class="gray"></div>
+                    <div class="violet"></div>
+                </div>
+                <div class="div_3">
+                    <div class="big"></div>
+                    <div class="small">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar"></div>
+        </main>
+        <footer></footer>
+    </body>
+</html>

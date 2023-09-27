@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .block {
+                display: flex;
+                height: 800px;
+                background-color: aqua;
+            }
+
+            .brown {
+                flex-basis: 30%;
+                background-color: brown;
+            }
+
+            .drugi {
+                background-color: green;
+                flex-basis: 70%;
+            }
+            
+            .gora {
+                height: 60px;
+                background-color: rgb(153, 82, 0);
+            }
+
+            .trzybloki {
+                display: flex;
+                width: 100%;
+                height: 740px;
+            }
+
+            .szary {
+
+                flex-grow: 1;
+                background-color: gray;
+            }
+
+            .kremowy {
+                flex-grow: 1;
+            }
+
+            .kremowy div {
+                height: 50%;
+                background-color: aqua;
+            }
+
+
+            .kremowy div + div { 
+                height: 50%;
+                background-color: greenyellow;
+            }
+
+
+            .niebieski {
+                flex-grow: 1;
+                background-color: rgb(33, 68, 163);
+            }
+
+            .niebieski div {
+                height: 25%;
+                background-color: blue;
+            }
+
+            .niebieski div + div {
+                background-color: rgb(46, 46, 128);
+
+            }
+
+            .niebieski div + div + div {
+                background-color: rgb(127, 127, 214);
+            }
+
+            .niebieski div + div + div + div {
+                background-color: rgb(10, 10, 53);
+            }
+
+            .footer {
+                display: flex;
+                height: 90px;
+            }
+
+            .footer div {
+                flex-grow: 1;
+            }
+
+            .pomaranczowy {
+                background-color: orange;
+            }
+
+            .brazowy {
+                background-color: rgb(78, 56, 27);
+            }
+
+            .zolty {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="block">
+            <div class="brown"></div>
+            <div class="drugi">
+                <div class="gora"></div>
+                <div class="trzybloki">
+                    <div class="szary"></div>
+                    <div class="kremowy">
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="niebieski">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="pomaranczowy"></div>
+            <div class="brazowy"></div>
+            <div class="zolty"></div>
+        </div>
+    </body>
+</html>
